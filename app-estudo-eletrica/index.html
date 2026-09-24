@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#102a43" />
+  <title>Eletrika | Laboratório de Engenharia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">∿</span><div><strong>ELETRIKA</strong><small>laboratório de engenharia</small></div></div>
+      <div class="profile-strip"><span class="avatar">MA</span><div><strong>Marcello Almeida</strong><small>trilha: Eng. Eletricista</small></div></div>
+      <nav id="main-nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-view="dashboard"><span>◈</span> Painel geral</button>
+        <button class="nav-item" data-view="modules"><span>▦</span> Trilha de módulos</button>
+        <button class="nav-item" data-view="lab"><span>⌁</span> Laboratório de cálculos</button>
+        <button class="nav-item" data-view="cards"><span>◇</span> Flashcards</button>
+        <button class="nav-item" data-view="interview"><span>◉</span> Simulador de entrevista</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="mini-label">STATUS DA TRILHA</div><div class="progress-line"><span id="side-progress"></span></div><strong id="side-progress-label">0% concluído</strong><small>Seu progresso fica salvo neste navegador.</small></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu">☰</button><div class="breadcrumb"><span>ELETRIKA</span><b>/</b><strong id="breadcrumb-current">PAINEL GERAL</strong></div><div class="top-actions"><span class="date-chip">28 SET 2026</span><button class="icon-button" id="reset-progress" title="Zerar progresso">↺</button></div></header>
+      <div id="app" class="view-container"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
